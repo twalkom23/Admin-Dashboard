@@ -9,17 +9,70 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 4fr;
-    
+    grid-template-rows: 1fr 4fr;  
 }
-
+/* Start of CSS for the header */
 .header {
-    background-color: #e2e8f0;
+    background-color: #f1f5f9;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.top-line {
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.search {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    gap: 5%;
+}
+.search input {
+    width: 70%;
+    background-color: #cbd5e1;
+    border: 0;
+    border-radius: 40px;
+}
+.top-info {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.bottom-line {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.bottom-line .left {
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    padding-left: 15%;
+}
+.left p {
+    line-height: 0.5;
+}
+.bottom-line .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bottom-line .right button {
+    width: 25%;
+    background-color: #0284c7;
+    border: 0;
+    color: white;
+    
+   
 }
 
+/* End of CSS for the header */
 
+/* Start of CSS for the sidebar */
 .sidebar {
     background-color: #0284c7;
     grid-column: 1 / 2;
@@ -35,23 +88,22 @@ body {
 .dash {
     margin-top: 30px;
 }
-
-
 .first-links {
     grid-row: 2 / 3;
 }
 .second-links {
     grid-row: 3 / 4;
 }
+/* End of CSS for the sidebar */
 
 .projects {
-    background-color: #9ca3af;
+    background-color: #cbd5e1;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
 
 .announce-trend {
-    background-color: #9ca3af;
+    background-color: #cbd5e1;
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
