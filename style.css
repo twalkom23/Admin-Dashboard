@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 body {
     margin: 0;
     padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 
@@ -60,16 +62,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 10%;
 }
 .bottom-line .right button {
     width: 25%;
     background-color: #0284c7;
     border: 0;
     color: white;
-    
-   
+    border-radius: 15px;
+    height: 45%;
 }
-
 /* End of CSS for the header */
 
 /* Start of CSS for the sidebar */
@@ -96,11 +98,35 @@ body {
 }
 /* End of CSS for the sidebar */
 
+/* start of CSS for project section */
 .projects {
     background-color: #cbd5e1;
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
 }
+.boxes {
+    width: 80%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 5%;
+    grid-gap: 15px;
+}
+.box p {
+    font-weight: 200;
+    
+}
+.projects #header {
+    padding-left: 5%;
+    font-weight: bold;
+}
+.box {
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 2%;
+    border-left: 15px solid #eab308;
+}
+/* end of CSS for project section */
 
 .announce-trend {
     background-color: #cbd5e1;
