@@ -102,6 +102,7 @@ body {
 /* start of CSS for project section */
 .projects {
     background-color: #cbd5e1;
+    
 }
 .boxes {
     width: 85%;
@@ -136,6 +137,7 @@ body {
     grid-row: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    
 
 }
 #ann-header {
@@ -176,7 +178,33 @@ body {
 .ann-display strong {
     color: black;
 }
+.trending {
+    width: 80%;
+    padding-left: 10%;
+}
+#trend-header {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
 
-
-
+.trend-display {
+    height: 70%;
+    width: 80%;
+    background-color: white; 
+    display: grid;
+    border-radius: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: small;
+    color: gray;
+}
+.trend-display div {
+    text-align: left;
+    margin-left: 20%; 
+}
+.trend-display strong {
+    color: black;
+}
 /* end of CSS for accouncement/trending sidebar*/
