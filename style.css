@@ -112,9 +112,6 @@ body {
     align-items: end;
     gap: 10px;
 }
-
-
-
 /* End of CSS for the header */
 
 /* Start of CSS for the sidebar */
@@ -247,14 +244,42 @@ body {
     display: grid;
     border-radius: 10px;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-left: 10%;
-    padding-right: 10%;
+    grid-template-columns: 1fr 3.5fr;
     font-size: small;
     color: gray;
 }
 .trend-display div {
     text-align: left;
-    margin-left: 20%; 
+    margin-left: 10%;
+    grid-column: 2 / 3;
+}
+.cow {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 40px;
+    align-self: center;
+    padding-left: 20%;  
+}
+.duck {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 40px;
+    align-self: center;
+    padding-left: 20%; 
+}
+.rabbit {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 40px;
+    align-self: center;
+    padding-left: 20%; 
+}
+.snail {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 40px;
+    align-self: center;
+    padding-left: 20%; 
 }
 .trend-display strong {
     color: black;
