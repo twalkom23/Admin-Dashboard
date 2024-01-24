@@ -31,7 +31,18 @@ body {
     display: flex;
     align-items: center;
     padding-left: 10%;
-    gap: 5%;
+    gap: 2%;
+}
+.searchButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    padding-top: 1%;
+}
+.searchButton img {
+    width: 25px;
+    height: auto;
 }
 .search input {
     width: 70%;
@@ -45,6 +56,20 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+.bell {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    padding-top: 1%;
+}
+.bell img {
+    width: 25px;
+    height: auto;
+}
+.topImage img {
+    width: 30px;   
+}
 .bottom-line {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -54,6 +79,9 @@ body {
     align-items: center;
     gap: 15%;
     padding-left: 15%;
+}
+.bottomImage img {
+    width: 60px;
 }
 .left p {
     line-height: 0.5;
@@ -72,6 +100,21 @@ body {
     border-radius: 15px;
     height: 45%;
 }
+#larger {
+    font-weight: 700;
+    font-size: larger;
+}
+#smaller {
+    font-size: x-small; 
+}
+.nameTag {
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+
+
 /* End of CSS for the header */
 
 /* Start of CSS for the sidebar */
@@ -81,22 +124,31 @@ body {
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: 1fr 3fr 2fr 3fr;
+    grid-template-columns: 30% 70%;
     color: white;
-    text-indent: 30%;
     font-weight: 700;
 }
 .logo {
     grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    
 }
 .dash {
     margin-top: 30px;
 }
 .first-links {
     grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    
 }
 .second-links {
-    grid-row: 3 / 4;
+    grid-row: 3 / 4; 
+    grid-column: 2 / 3;  
 }
+
+
+
+
 /* End of CSS for the sidebar */
 
 /* start of CSS for project section */

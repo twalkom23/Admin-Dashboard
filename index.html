@@ -13,21 +13,29 @@
         <div class="header">
             <div class="top-line">
                 <div class="search">
-                    <button>S</button>
+                    <button class="searchButton" type="button">
+                        <img src="images/magnify.svg">
+                    </button>
                     <input type="text">
                 </div>
                 <div class="top-info">
-                    <button>Bell</button>
-                    <div>image</div>
-                    <p>Frankie Hanna</p>
+                    <button class="bell" type="button">
+                        <img src="images/bell-ring-outline.svg">
+                    </button>
+                    <div class="topImage">
+                        <img src="images/dog.svg">
+                    </div>
+                    <p id="name"><strong>Frankie Hanna</strong></p>
                 </div>
             </div>
             <div class="bottom-line">
                 <div class="left">
-                        <div>image</div>
+                        <div class="bottomImage">
+                            <img src="images/dog.svg">
+                        </div>
                     <div class="welcome">
                         <p>Hi there,</p>
-                        <p>Frankie Hanna (@frankie)</p>
+                        <p class="nameTag"><span id="larger">Frankie Hanna</span><span id="smaller">@frankie</span> </p>
                     </div>
                 </div>
                 <div class="right">
@@ -44,18 +52,19 @@
             <div class="Logo">
                 <p class="dash">Dashboard</p>
             </div>
+            
             <div class="first-links">
-                <p>Home</p>
-                <p>Profile</p>
-                <p>Messages</p>
-                <p>History</p>
-                <p>Tasks</p>
-                <p>Communities</p>
+                <div class="home"><p>Home</p></div>
+                <div class="profile"><p>Profile</p></div>
+                <div class="messages"><p>Messages</p></div>
+                <div class="history"><p>History</p></div>
+                <div class="tasks"><p>Tasks</p></div>
+                <div class="communities"><p>Communities</p></div>
             </div>
             <div class="second-links">
-                <p>Settings</p>
-                <p>Support</p>
-                <p>Privacy</p>
+                <div class="settings"><p>Settings</p></div>
+                <div class="support"><p>Support</p></div>
+                <div class="privacy"><p>Privacy</p></div>
             </div>
         </div>
         <!--End of Sidebar-->
@@ -116,7 +125,7 @@
                     <div><br><strong>@alex</strong><br>No Traffic Maker</div>
                 </div>
             </div>
-
+            
         <!--End of announcements/trends sidebar-->
 
             
